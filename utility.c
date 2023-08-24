@@ -1,10 +1,10 @@
 #include "shell.h"
 /**
- * its_interactive - if the shell is interactive mode it returns true
+ * _interactive - if the shell is interactive mode it returns true
  * @info: Pointer to p_info_t struct.
  * Return: 1 if shell is in is interactive mode, 0 otherwise.
  */
-int its_interactive(p_info_t *info)
+int _interactive(p_info_t *info)
 {
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }

@@ -161,8 +161,8 @@ void *_realloc(void *, unsigned int, unsigned int);
 int bfree(void **);
 
 /* toem_atoi.c */
-int _interactive(p_info_t *);
 int is_delim(char, char *);
+int _interactive(p_info_t *);
 int _isalpha(int);
 int _atoi(char *);
 
