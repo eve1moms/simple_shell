@@ -14,7 +14,7 @@ int _shell(p_info_t *info, char **av)
 	while (r != -1 && builtin_ret != -2)
 	{
 		clear_p_info(info);
-		if (_interactive (info))
+		if (_interactive(info))
 			_puts("$ ");
 		_eputchar(FLUSH_BUF);
 		r = get_input(info);
@@ -25,13 +25,13 @@ int _shell(p_info_t *info, char **av)
 			if (builtin_ret == -1)
 				find_cmd(info);
 		}
-		else if (_interactive (info))
+		else if (_interactive(info))
 			_putchar('\n');
 		free_p_info(info, 0);
 	}
 	write_history(info);
 	free_p_info(info, 1);
-	if (!_interactive (info) && info->status)
+	if (!_interactive(info) && info->status)
 		exit(info->status);
 	if (builtin_ret == -2)
 	{
@@ -103,7 +103,7 @@ void find_cmd(p_info_t *info)
 	}
 	else
 	{
-		if ((_interactive (info) || _getenv(info, "PATH=")
+		if ((_interactive(info) || _getenv(info, "PATH=")
 					|| info->argv[0][0] == '/') && is_cmd(info, info->argv[0]))
 			fork_cmd(info);
 		else if (*(info->arg) != '\n')
