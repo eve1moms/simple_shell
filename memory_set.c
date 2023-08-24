@@ -34,6 +34,7 @@ void ffree(char **pp)
  * @ptr: pointer to the previously malloc'ated block.
  * @old_size: The previous size in bytes of the block.
  * @new_size: The new size in bytes of the block.
+ * Return: void
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
