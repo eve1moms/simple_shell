@@ -1,10 +1,11 @@
 #include "shell.h"
 /**
- * my_history - Display the history list, showing one command per line,
- * preceded by line numbers starting at 0.
- * @info: Structure containing potential arguments. Used to maintain
- * a constant function prototype.
- * Return: Always 0
+ * my_history - shows history list Showing 1 cmd per line,
+ * proceding with line numbers starting at 0.
+ * @info: This is the Struct that has potential arguments Used to
+ * maintain
+ * THE C onstantFunct prototype.
+ * Return: 0
  */
 int my_history(p_info_t *info)
 {
@@ -12,10 +13,10 @@ int my_history(p_info_t *info)
 	return (0);
 }
 /**
- * unset_alias - delete an alias associated with a string.
- * @info: Parameter struct.
- * @str: The string alias to be removed.
- * Return: Always 0 on success, 1 on error.
+ * unset_alias - inside the string it delete an alias associated with it
+ * @str: STR to del
+ * @info: Parameter STRUCT
+ * Return: 0 on succes ELSE 1 on error.
  */
 int unset_alias(p_info_t *info, char *str)
 {
@@ -33,9 +34,9 @@ int unset_alias(p_info_t *info, char *str)
 	return (ret);
 }
 /**
- * set_alias - this sets an alias to a string.
- * @info: Parameter struct.
- * @str: string alias to be set.
+ * set_alias - in the string it sets an alias
+ * @str: STR where alias is to be set
+ * @info: Parameter STRUCT
  * Return:  0 on success, 1 on error.
  */
 int set_alias(p_info_t *info, char *str)
@@ -52,9 +53,9 @@ int set_alias(p_info_t *info, char *str)
 	return (add_node_end(&(info->alias), str, 0) == NULL);
 }
 /**
- * print_alias - Print alias string.
- * @node: The alias node to be printed.
- * Return: Always 0 on success, 1 on error.
+ * print_alias - this fuction rpints the alis strung
+ * @node: this is the alis node to be printed
+ * Return: 0 on success ELSE 1 on error
  */
 int print_alias(list_t *node)
 {
@@ -73,9 +74,9 @@ int print_alias(list_t *node)
 	return (1);
 }
 /**
- * my_alias - Mimic the alias builtin (man alias).
- * @info: Structure containing potential arguments. Used to maintain
- * a constant function prototype.
+ * my_alias - this fubct mimics the alis builtin,(man alias)
+ * @info: This contains potential arg
+ * and it maintain a constant prototype
  * Return: 0.
  */
 int my_alias(p_info_t *info)

@@ -1,9 +1,10 @@
 #include "shell.h"
 /**
- * **_strtop - Splits a string into words
- * @str: The input string to be split.
- * @d: delimiter string used to split the input string.
- * Return: A pointer to an array of strings (words), or NULL on failure.
+ * **_strtop -  this function splits a dtrn in  2 words Splits
+ * @d: tthi sis the delimeter string that is used to split the INPUT str
+ * @str: Tis is the str to be split
+ * Return: should return  pointer to an arr of strings on sucesses else NULL
+ * on failure
  */
 char **_strtop(char *str, char *d)
 {
@@ -46,10 +47,11 @@ char **_strtop(char *str, char *d)
 	return (s);
 }
 /**
- * **_strtop2 - Splits a string into words
- * @str: The input string to be split.
- * @d: delimiter character used to split the input string.
- * Return: A pointer to an array of strings (words), or NULL on failure.
+ * **_strtop2 - this sfuncion splis a sring intoword
+ * @d: his is he delimeer char tha is used o split the inputed str
+ * @str: This is the input string to be split
+ * Return: on  sucess, should return pointer to array of str
+ * else  null
  */
 char **_strtop2(char *str, char d)
 {

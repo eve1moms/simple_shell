@@ -1,9 +1,9 @@
 #include "shell.h"
 /**
- * is_cmd - Checks if a file is an executable command.
- * @info: Pointer to info struct.
- * @path: Path to the file.
- * Return: 1 if the file is an executable command, else 0
+ * is_cmd - the function checks if a file is an executable cmdi
+ * @path: pathew ay to the file
+ * @info: this is the pinter to file
+ * Return: if ifle is an execytable command return 1 else 0
  */
 int is_cmd(p_info_t *info, char *path)
 {
@@ -20,11 +20,11 @@ int is_cmd(p_info_t *info, char *path)
 	return (0);
 }
 /**
- * dup_chars - Duplicates characters of a given string.
+ * dup_chars - this duplicated the chars toa given string
+ * @stop: stopping point(index) for the characters to duplicate
+ * @start: strsting point(index) for char to duplicate.
  * @pathstr:  PATH string.
- * @start: Starting index of the characters to duplicate.
- * @stop: Stopping index of the characters to duplicate.
- * Return: Pointer to the buffer containing the duplicated characters.
+ * Return: Apointer to a buf containg the duplicate chars
  */
 char *dup_chars(char *pathstr, int start, int stop)
 {
@@ -38,11 +38,11 @@ char *dup_chars(char *pathstr, int start, int stop)
 	return (buf);
 }
 /**
- * find_path - Finds the specified cmd in the PATH string
- * @info: Pointer to info struct.
- * @pathstr: The PATH string.
- * @cmd: cmd to find
- * Return: path of cmd if found else NULL
+ * find_path - this locates a specified cmd to the string
+ * @cmd: the command to locate
+ * @pathstr: this is the pathway to the string
+ * @info: this is justthe pointer to e info structure
+ * Return: a pathway to the cmd else NULL
  */
 char *find_path(p_info_t *info, char *pathstr, char *cmd)
 {

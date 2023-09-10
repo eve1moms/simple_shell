@@ -1,9 +1,9 @@
 #include "shell.h"
 /**
- * _myexit - Exits the Shell.
- * @info: Structure containing potential arg used to maintain constant
- * function prototype
- * Return: Exits with exit status (0) if info->argv[0] is not "exit".
+ * _myexit - This function exitsts the shell
+ * @info: has structure that contanin potentian arg
+ * maintains constant prototyoe
+ * Return: it exists Status With a 0,if info->argv[0]  NOT "exit".
  */
 int _myexit(p_info_t *info)
 {
@@ -27,10 +27,10 @@ int _myexit(p_info_t *info)
 	return (-2);
 }
 /**
- * change_directory - Changes thedirectory
- * @info: Structure containing potential arg used to maintain constant
- * function prototype.
- * Return: Always 0.
+ * change_directory - This fubction  haged directory
+ * @info: has structure that contains [otentian ards
+ * maintains constant prototypr
+ * Return: 0
  */
 int change_directory(p_info_t *info)
 {
@@ -44,7 +44,7 @@ int change_directory(p_info_t *info)
 	{
 		dir = _getenv(info, "HOME=");
 		if (!dir)
-			chdir_ret = /* TODO: what should this be? */
+			chdir_ret = /* TODO: WHAT COULD IT BE be? */
 				chdir((dir = _getenv(info, "PWD=")) ? dir : "/");
 		else
 			chdir_ret = chdir(dir);
@@ -58,7 +58,7 @@ int change_directory(p_info_t *info)
 			return (1);
 		}
 		_puts(_getenv(info, "OLDPWD=")), _putchar('\n');
-		chdir_ret = /* TODO: what should this be? */
+		chdir_ret = /* TODO: WHAT COULD THIS BEE?*/
 			chdir((dir = _getenv(info, "OLDPWD=")) ? dir : "/");
 	}
 	else
@@ -76,9 +76,9 @@ int change_directory(p_info_t *info)
 	return (0);
 }
 /**
- * my_help - Displays help info
- * @info: Structure containing potential arg used to maintain constant
- * function prototype.
+ * my_help - tgis displaya my help
+ * @info: THis contains potentiaal args
+ * maintians a contavt prototype
  * Return: 0.
  */
 int my_help(p_info_t *info)
@@ -88,6 +88,6 @@ int my_help(p_info_t *info)
 	arg_array = info->argv;
 	_puts("help call works. Function not yet implemented \n");
 	if (0)
-		_puts(*arg_array); /* temp att_unused workaround */
+		_puts(*arg_array);
 	return (0);
 }

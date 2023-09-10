@@ -1,9 +1,9 @@
 #include "shell.h"
 /**
- * main - entry point
- * @ac: arg count
- * @av: arg vector
- * Return: 0 on success, 1 on error
+ * main -This is the main entry point
+ * @av: this is the argument vector
+ * @ac: this is the argument count
+ * Return: if uscessfulreturn 0 else 1
  */
 int main(int ac, char **av)
 {

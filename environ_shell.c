@@ -1,9 +1,8 @@
 #include "shell.h"
 /**
- * my_env - prints the current environment
- * @info: Structure containing potential arg used to maintain  a constant
- * function prototype.
- * Return: Always 0.
+ * my_env - this fuction prints the currentenviroment
+ * @info: This struct that has potential arg
+ * Return: 0
  */
 int my_env(p_info_t *info)
 {
@@ -11,11 +10,10 @@ int my_env(p_info_t *info)
 	return (0);
 }
 /**
- * _getenv - Gets the value of an environment variable.
- * @info: Structure containing potential arg used to maintain a constant
- * function prototype.
- * @name: enviroment variable name
- * Return: value of environment variable or NULL if not found.
+ * _getenv - This get the value of the curentVarIABLE
+ * @name: the name of the enviromentt variable
+ * @info: this isthe structure containings potential args
+ * Return: this function retrn value of te enirment varable else null
  */
 char *_getenv(p_info_t *info, const char *name)
 {
@@ -32,10 +30,9 @@ char *_getenv(p_info_t *info, const char *name)
 	return (NULL);
 }
 /**
- * _mysetenv - initializes a new Environment variable
- * @info: Structure containing potential arguments. Used to maintain a constant
- * function prototype.
- * Return: Always 0.
+ * _mysetenv - thhis functio initializes a new enviroment variable
+ * @info: This is the structure containing potential Args
+ * Return: 0
  */
 int _mysetenv(p_info_t *info)
 {
@@ -50,10 +47,10 @@ int _mysetenv(p_info_t *info)
 }
 
 /**
- * _myunsetenv - deletes an Environment variable.
- * @info: Structure containing potential arguments. Used to maintain a constant
- * function prototype.
- * Return: Always 0.
+ * _myunsetenv - this function deletes an envriment variable
+ * @info: this is the strc containg potential arguments
+ * it maintains a constant function prototype.
+ * Return: 0.
  */
 int _myunsetenv(p_info_t *info)
 {
@@ -70,10 +67,10 @@ int _myunsetenv(p_info_t *info)
 	return (0);
 }
 /**
- * populate_env_list - Populates the env linked list.
- * @info: Structure containing potential arg used to maintain a constant
- * function prototype.
- * Return: Always 0.
+ * populate_env_list - tis function popultes the ENV lists
+ * @info: this struct contains potential args.
+ *it maintaincs a CONTANSTANT prototype.
+ * Return: Constant 0
  */
 int populate_env_list(p_info_t *info)
 {

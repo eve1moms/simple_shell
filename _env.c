@@ -1,8 +1,8 @@
 #include "shell.h"
 /**
- * get_environ - Returns a copy of the str array environ
- * @info: Pointer to a structure containing potential arguments.
- * Return: A pointer to the str array environ.
+ * get_environ - This Retursn a copy of the string array Environ
+ * @info: This the pointer to the srct having the pontential arg
+ * Return: SHOULD retrn a pointe rto the string
  */
 char **get_environ(p_info_t *info)
 {
@@ -15,10 +15,10 @@ char **get_environ(p_info_t *info)
 	return (info->environ);
 }
 /**
- * _unsetenv - Removes an environment variable.
- * @info: Pointer to a structure containing potential arguments.
- * @var: The name of the environment variable to be removed.
- * Return: 1 on successful deletion, else 0
+ * _unsetenv - This function remives an enviromnet virable
+ * @info: thi the pointer to the strct having the potential arg
+ * @var: This is the name of the environment variable
+ * Return: for sucessfukl deletion return one else 0
  */
 int _unsetenv(p_info_t *info, char *var)
 {
@@ -45,10 +45,10 @@ int _unsetenv(p_info_t *info, char *var)
 	return (info->env_changed);
 }
 /**
- * _setenv - Initializes a new environment
- * @info: Pointer to a structure containing potential arguments.
- * @var: The name of the environment variable.
- * @value: The value to be assigned to the environment variable.
+ * _setenv -this initialized a new enviromnt
+ * @var: this is the namem of the vairable
+ * @info: this is the pointer to the stct having potential args
+ * @value: value given t o the variable
  * Return: 0
  */
 int _setenv(p_info_t *info, char *var, char *value)

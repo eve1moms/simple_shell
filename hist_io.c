@@ -1,8 +1,8 @@
 #include "shell.h"
 /**
- * get_history_file - Retrieves the hist file path.
- * @info: Pointer to the parameter struct.
- * Return: Allocated string containing the history file path,
+ * get_history_file - this retrieves thre hist file pathway
+ * @info: this is the pointer to the parameter struct
+ * Return: the alloctaed strg containing the pathway of hst file
  */
 char *get_history_file(p_info_t *info)
 {
@@ -21,9 +21,9 @@ char *get_history_file(p_info_t *info)
 	return (buf);
 }
 /**
- * write_history - Writes the hist to a file.
- * @info: Pointer to the parameter struct.
- * Return: Returns 1 on success, else -1 on failure.
+ * write_history - this function writes the hist to a file
+ * @info: This is the poiter to the parameter struect
+ * Return: if sucessful 1 else 0
  */
 int write_history(p_info_t *info)
 {
@@ -48,9 +48,9 @@ int write_history(p_info_t *info)
 	return (1);
 }
 /**
- * read_history - Reads hist from a file.
- * @info: Pointer to the parameter struct.
- * Return: number of history entries on success else 0
+ * read_history - this function READS hist from a file
+ * @info: This is the pointer to the parameter file
+ * Return: on success retuen no of hist file else 0
  */
 int read_history(p_info_t *info)
 {
@@ -95,10 +95,10 @@ int read_history(p_info_t *info)
 	return (info->histcount);
 }
 /**
- * build_history_list - Adds an entry to the hist linked list.
- * @info: struct containing arguments
- * @buf: the buffer containing the history entry
- * @linecount: The history linecount, histcount.
+ * build_history_list - Function adds an entry to the hit linked list
+ * @buf: this is the uf containing the hitory entry
+ * @info: is hes struc containingpotential args
+ * @linecount: his is the histiry line count
  * Return: 0.
  */
 int build_history_list(p_info_t *info, char *buf, int linecount)
@@ -114,9 +114,10 @@ int build_history_list(p_info_t *info, char *buf, int linecount)
 	return (0);
 }
 /**
- * renumber_history - Renumbers the hist linked list after changes.
- * @info: struct containing arguments
- * Return: Returns new histcount.
+ * renumber_history - this function renumber the history linked listed
+ * after changes have been made
+ * @info: this is the structure containing poyential args
+ * Return: THE new histcount.
  */
 int renumber_history(p_info_t *info)
 {

@@ -1,30 +1,31 @@
 #include "shell.h"
 /**
  * _interactive - if the shell is interactive mode it returns true
- * @info: Pointer to p_info_t struct.
- * Return: 1 if shell is in is interactive mode, 0 otherwise.
+ * @info: this is the Pointer 2 p_info_t struct.
+ * Return: if the SHELL is in interacive mode 1 else 0
  */
 int _interactive(p_info_t *info)
 {
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }
 /**
- * is_delim - Checks if a character is a seperator
- * @c: The character to check.
- * @delim: The delimiter string.
- * Return: 1 if the character is a seperator, 0 otherwise.
+ * is_delim - this function checks if the charpresent is a seperatore
+ * @delim: this is the str delimeer
+ * @c: This is the caharacter to check.
+ * Return: if THEchar is SEPERRATPR
  */
 int is_delim(char c, char *delim)
 {
+
 	while (*delim)
 		if (*delim++ == c)
 			return (1);
 	return (0);
 }
 /**
- * _isalpha - Checks if a character is an alphabetic
- * @c: The character to be checked
- * Return: 1 if the character is alphabetic, 0 otherwise.
+ * _isalpha - this function  Checks if  chars is ALPHABETIC
+ * @c: This is the char to be checked
+ * Return:if characyer is alphabeti 1 else 0c
  */
 int _isalpha(int c)
 {
@@ -34,10 +35,9 @@ int _isalpha(int c)
 		return (0);
 }
 /**
- * _atoi - Converts  string to integer.
- * @s: The string to converted.
- * Return: 0 if there are no numbers in the string,
- * the converted number otherwise.
+ * _atoi - this function converts a STRG to an int.
+ * @s: This is the str to be converted.
+ * Return: if there are no number 0 else the number converted
  */
 int _atoi(char *s)
 {

@@ -1,10 +1,11 @@
 #include "shell.h"
 /**
- * _shell - main shell loop.
- * @info: Pointer to the parameter and return info struct.
- * @av: argument vector from main().
- * The function runs the main loop of the shell.
- * Return: 0 on success, 1 on error, or an error code.
+ * _shell - this function is the  main shell loop
+ * @av: this is the argument vecor
+ * @info: this pointer to the parametr and retuen info struct
+ * @av:
+ * Ths funcion is reponsible for runnin he maon loop of shell
+ * Return: on success 0 on error 1 or and rror message
  */
 int _shell(p_info_t *info, char **av)
 {
@@ -42,12 +43,11 @@ int _shell(p_info_t *info, char **av)
 	return (builtin_ret);
 }
 /**
- * find_builtin - Find a builtin cmd
- * @info: Pointer to the parameter & return info struct.
- * Return: -1 if builtin not found,
- * 0 if builtin executed successfully,
- * 1  if builtin found but not successful
- * 2 if builtin signals exit().
+ * find_builtin - this function finds a built in command
+ * @info:This is a pointer 2 parameter
+ * Return: if builtin functtion not found retur -1
+ * if thr built in excuted sucessfully 0,if not found but succesfully 1
+ * if built insignala (exit) 2.
  */
 int find_builtin(p_info_t *info)
 {
@@ -74,9 +74,9 @@ int find_builtin(p_info_t *info)
 	return (built_in_ret);
 }
 /**
- * find_cmd - Find a command in PATH.
- * @info: Pointer to parameter & return info struct.
- * Return: void
+ * find_cmd - this function Finds a command in the PATH.
+ * @info:  this is the pointe rto th PARAMETEr
+ * Return: VOID
  */
 void find_cmd(p_info_t *info)
 {
@@ -114,8 +114,8 @@ void find_cmd(p_info_t *info)
 	}
 }
 /**
- * fork_cmd - Fork a child process to execute a cmd
- * @info: Pointer to parameter & return info struct.
+ * fork_cmd -  this function is to Fork a child PROCESSS 2 execute a cmd
+ * @info: this a pointer to the parameter
  */
 void fork_cmd(p_info_t *info)
 {
@@ -124,7 +124,6 @@ void fork_cmd(p_info_t *info)
 	child_pid = fork();
 	if (child_pid == -1)
 	{
-		/* TODO: PUT ERROR FUNCTION */
 		perror("Error:");
 		return;
 	}
@@ -137,7 +136,6 @@ void fork_cmd(p_info_t *info)
 				exit(126);
 			exit(1);
 		}
-		/* TODO: PUT ERROR FUNCTION */
 	}
 	else
 	{

@@ -1,11 +1,10 @@
 #include "shell.h"
 /**
- * input_buf - reads input and buffers chained commands.
- * @info: Parameter struct containing shell info
- * @buf: Address of the buf
- * @len: Address of the length variable.
- *
- * Return: Number of bytes read.
+ * input_buf -this functioon reads INPUT and BUF chained commads
+ * @buf: this si the adress of the buf
+ * @info: this is the  Parameter 2 strct containing  the shell info
+ * @len: this is the adress to the lenghth var
+ * Return: the no of bytes READ
  */
 ssize_t input_buf(p_info_t *info, char **buf, size_t *len)
 {
@@ -34,7 +33,6 @@ ssize_t input_buf(p_info_t *info, char **buf, size_t *len)
 			info->linecount_flag = 1;
 			delete_comments(*buf);
 			build_history_list(info, *buf, info->histcount++);
-			/* if (_strchr(*buf, ';')) Is this a command chain? */
 			{
 				*len = r;
 				info->cmd_buf = buf;
@@ -44,9 +42,9 @@ ssize_t input_buf(p_info_t *info, char **buf, size_t *len)
 	return (r);
 }
 /**
- * get_input - Gets a line of input without the newline char
- * @info: Parameter struct containing shell info.
- * Return: Num of bytes read.
+ * get_input - Thhis function Gets a line of input withoutnewline char
+ * @info: this is a Parameter strct having shell info
+ * Return:the no of bytes read
  */
 ssize_t get_input(p_info_t *info)
 {
@@ -65,33 +63,33 @@ ssize_t get_input(p_info_t *info)
 		p = buf + i;
 
 		check_chain(info, buf, &j, i, len);
-		while (j < len) /* Iterate to semicolon or end. */
+		while (j < len)
 		{
 			if (is_chain(info, buf, &j))
 				break;
 			j++;
 		}
 
-		i = j + 1; /* Increment past nulled ';'' */
-		if (i >= len) /* Reached the end of the buffer? */
+		i = j + 1;
+		if (i >= len)
 		{
-			i = len = 0; /* Reset position and length. */
+			i = len = 0;
 			info->cmd_buf_type = _NORMAL_CMD;
 		}
 
-		*buf_p = p; /* Pass back the pointer to the current command position. */
-		return (_strlen(p)); /* Return the length of the current command. */
+		*buf_p = p;
+		return (_strlen(p));
 	}
 
-	*buf_p = buf; /* Else not a chain, pass back the buffer from _getline(). */
-	return (r); /* Return the length of the buffer from _getline(). */
+	*buf_p = buf;
+	return (r);
 }
 /**
- * read_buf - Reads a buf from a fd
- * @info: Parameter struct containing shell info
- * @buf: Buffer to store the read data.
- * @i: Size of the buf
- * Return: Number of bytes read.
+ * read_buf - this function Reads buf from A fd
+ * @buf: this is the buf tostoore the read data.
+ * @info: this is the Parameter Strct having shell info
+ * @i:  this is the size of the buf
+ * Return: the no if BYtes it has read
  */
 ssize_t read_buf(p_info_t *info, char *buf, size_t *i)
 {
@@ -105,11 +103,11 @@ ssize_t read_buf(p_info_t *info, char *buf, size_t *i)
 	return (r);
 }
 /**
- * _getline - Gets the next line of input from STDIN.
- * @info: Parameter struct containing shell info
- * @ptr: Address of a pointer to buffer, preallocated or NULL.
- * @length: Size of the preallocated ptr buffer if not NULL.
- * Return: Num of bytes read.
+ * _getline - Thisfunction Gets  next line INPUT from STDIN.
+ * @ptr: this is the adress of the pointr t the buf, prelocated or null
+ * @info: this is the Parameter strct having the shell info
+ * @length: this is the size of PREallocated ptr buf if not NULL.
+ * Return: REturns no of BYtes read
  */
 int _getline(p_info_t *info, char **ptr, size_t *length)
 {
@@ -150,9 +148,9 @@ int _getline(p_info_t *info, char **ptr, size_t *length)
 	return (s);
 }
 /**
- * sigintHandler - Blocks Ctrl-C signal.
- * @sig_num: The signal num
- * Return: void
+ * sigintHandler - this function Blocks Ctrl-C signals
+ * @sig_num: This is the signal no
+ * Return: returns void
  */
 void sigintHandler(__attribute__((unused)) int sig_num)
 {

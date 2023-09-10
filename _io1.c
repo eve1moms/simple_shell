@@ -1,8 +1,8 @@
 #include "shell.h"
 /**
- * _erratoi - Converts a str to an int.
- * @s: string to be converted
- * Return: converted number if success else -1
+ * _erratoi - this function Converts a str to an integerrr
+ * @s: this is the string to be converted
+ * Return: on sucess the converted no else -1
  */
 int _erratoi(char *s)
 {
@@ -27,9 +27,9 @@ int _erratoi(char *s)
 	return (result);
 }
 /**
- * perror_ - Prints error message
- * @info: pointer to the parameter & the return info struct.
- * @estr: string containing the specified error type.
+ * perror_ - this function prints an err msg
+ * @estr: this is the string containing the err type
+ * @info: this is the pointer to the Parameter & the return info Strct.
  */
 void perror_(p_info_t *info, char *estr)
 {
@@ -42,10 +42,10 @@ void perror_(p_info_t *info, char *estr)
 	_eputs(estr);
 }
 /**
- * print_d - Function prints a decimal int number  of base 10
- * @input: input number to be printed.
- * @fd:  file descriptor to write to.
- * Return:  number of char printed.
+ * print_d - this  Function prints a Decimal int no  of base 10
+ * @fd: this isnthe filedescriptor to write TO
+ * @input: this is the input number to be printed
+ * Return:  The number of the printed CHAR
  */
 int print_d(int input, int fd)
 {
@@ -81,11 +81,11 @@ int print_d(int input, int fd)
 	return (count);
 }
 /**
- * num_to_str - Converter function, a clone of itoa.
- * @num: number to be converted.
- * @base: base for conversion.
- * @flags: Argument flags.
- * Return: converted string.
+ * num_to_str - this isa Converter function CLONE of itoa
+ * @base: this is the base of conversation
+ * @num: this is the no2 be number to be converted.
+ * @flags: these are  Argument flags.
+ * Return: should return converted str
  */
 char *num_to_str(long int num, int base, int flags)
 {
@@ -115,8 +115,9 @@ char *num_to_str(long int num, int base, int flags)
 	return (ptr);
 }
 /**
- * delete_comments - this fubction replaces the first instance of '#' with '\0'
- * @buf: address of the string to modify.
+ * delete_comments - this function REPLACES the first
+ * instance of '#' with '\0'....
+ * @buf: tis is the address of the string to be modified
  */
 void delete_comments(char *buf)
 {

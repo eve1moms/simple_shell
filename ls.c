@@ -1,10 +1,10 @@
 #include "shell.h"
 /**
- * add_node - Adds a new node to the start of the ls
- * @head: Address of the pointer to the head node.
- * @str: string data to be stored in the new node.
- * @num: node index used by hist
- * Return: size of the updated list.
+ * add_node -  this function ads new node to the start o f the ls
+ * @str: this is the string that is stored in he new node
+ * @head: This is the adress of pointer to the head node
+ * @num: this is the node index USED by histt
+ * Return: returns the size of the UPDATED LIst
  */
 list_t *add_node(list_t **head, const char *str, int num)
 {
@@ -31,11 +31,11 @@ list_t *add_node(list_t **head, const char *str, int num)
 	return (new_head);
 }
 /**
- * add_node_end - Adds a new node to the end of the ls
- * @head: Address of the pointer to the head node.
- * @str: string data to be stored in the new node.
- * @num: node index used by hist
- * Return:  size of the updated ls
+ * add_node_end - This function adds a new nodeto end of LIS
+ * @str: this is the sr data that is stored in new node
+ * @head: this is the address of Pointer to the head node
+ * @num:  This is the node INDEX TO  use
+ * Return:  should return the size of the list updated
  */
 list_t *add_node_end(list_t **head, const char *str, int num)
 {
@@ -70,9 +70,9 @@ list_t *add_node_end(list_t **head, const char *str, int num)
 	return (new_node);
 }
 /**
- * print_list_str - Prints only the str element of a list_t
- * @h: Pointer to the first node.
- * Return: size of the ls
+ * print_list_str - this function prints the only str element of a list_t
+ * @h: this is the pointer to the 1s node
+ * Return:this function returns the  SIZE of the ls
  */
 size_t print_list_str(const list_t *h)
 {
@@ -88,10 +88,10 @@ size_t print_list_str(const list_t *h)
 	return (i);
 }
 /**
- * delete_node_at_index - Deletes a node at the given index.
- * @head: Address of the pointer to the first node.
- * @index: Index of the node to delete.
- * Return: 1 on success, 0 on failure.
+ * delete_node_at_index - This function deletes a node at the given index
+ * @index: this is the index of the NODE to delete.
+ * @head: This is the Address of Pointer 2 the first node
+ * Return: if sucessful1 if fail 0
  */
 int delete_node_at_index(list_t **head, unsigned int index)
 {
@@ -126,8 +126,8 @@ int delete_node_at_index(list_t **head, unsigned int index)
 	return (0);
 }
 /**
- * free_list - Frees all nodes of a list
- * @head_ptr: Address of the pointer to thee head node.
+ * free_list - this function frees all NIDES in ls
+ * @head_ptr: this is a pointer of the Address of the head node.
  */
 void free_list(list_t **head_ptr)
 {

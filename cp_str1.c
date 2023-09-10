@@ -1,9 +1,9 @@
 #include "shell.h"
 /**
- * _strcpy - Copies a src string to a dest string.
- * @dest: The dest string.
- * @src: The src string.
- * Return: Pointer to destination.
+ * _strcpy - this copied a sring tio destination string
+ * @src: thi sis the source string
+ * @dest: this is the destination string
+ * Return:a pointer to the s dest string
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -20,13 +20,12 @@ char *_strcpy(char *dest, char *src)
 	return (dest);
 }
 /**
- * _strdup - Duplicates a string.
- * @str: string to duplicate.
- * Return: Pointer to the duplicated string.
+ * _strdup - This is dupposed to duplicate a string
+ * @str: String that is supposed to be duoplcated
+ * Return: A pointer to the duplicated string
  */
 char *_strdup(const char *str)
 {
-	/* Function to duplicate a given string */
 	int length = 0;
 	char *ret;
 
@@ -42,12 +41,11 @@ char *_strdup(const char *str)
 	return (ret);
 }
 /**
- * _puts - Prints an input string.
- * @str:string to be printed.
+ * _puts - This prints out an input string
+ * @str: String that is supossed to be printed
  */
 void _puts(char *str)
 {
-	/* Function to print the given string */
 	int i = 0;
 
 	if (!str)
@@ -59,14 +57,12 @@ void _puts(char *str)
 	}
 }
 /**
- * _putchar - Writes the character c to stdout.
- * @c: character to print.
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * _putchar - This writes a CHr c to STDOut
+ * @c: Tis is the character to print out
+ * Return: 1 on sucess and -  when fail and errno isset approprietly
  */
 int _putchar(char c)
 {
-	/* Function to write a character to stdout */
 	static int i;
 	static char buf[SIZE_BUF_WRITE];
 

@@ -1,10 +1,10 @@
 #include "shell.h"
 /**
- * is_chain - Tests if the char inbuf is a chain delimeter
- * @info: the parameter struct
- * @buf: the char buffer
- * @p: Address of the current position in buf.
- * Return: 1 if it is a chain delimiter, 0 otherwise.
+ * is_chain - This checks if  achratcter ina buf is a chain delimeter
+ * @buf: thhi sis the character buf
+ * @info: this is the parameter
+ * @p: this is the adress to the current buff positiion
+ * Return: if is a cin delimeter return 1 else 0
  */
 int is_chain(p_info_t *info, char *buf, size_t *p)
 {
@@ -22,9 +22,9 @@ int is_chain(p_info_t *info, char *buf, size_t *p)
 		j++;
 		info->cmd_buf_type = _AND_CMD;
 	}
-	else if (buf[j] == ';') /* Found the end of this command */
+	else if (buf[j] == ';')
 	{
-		buf[j] = 0; /* Replace semicolon with null terminator */
+		buf[j] = 0;
 		info->cmd_buf_type = _CHAIN_CMD;
 	}
 	else
@@ -33,13 +33,13 @@ int is_chain(p_info_t *info, char *buf, size_t *p)
 	return (1);
 }
 /**
- * check_chain - Checks if chaining should continue based
- * the last status
- * @info: Pointer to the parameter struct.
+ * check_chain - this checks if the chaining shouls continue
+ * based on the last ststus
+ * @p: this shows he address of thh current position in buf
+ * @len: this is the legth of the buf
+ * @info: this is the pointer to the parameter struct
  * @buf: The character buffer.
- * @p: Address of the current position in buf.
  * @i: Starting position in buf.
- * @len: Length of buf.
  */
 void check_chain(p_info_t *info, char *buf, size_t *p, size_t i, size_t len)
 {
@@ -65,9 +65,9 @@ void check_chain(p_info_t *info, char *buf, size_t *p, size_t i, size_t len)
 	*p = j;
 }
 /**
- * replace_alias - Replaces an alias in the tokenized string.
- * @info: Pointer to the parameter struct.
- * Return: 1 if replaced, 0 otherwise.
+ * replace_alias - Thisis upposed to replace an alis to the supported string
+ * @info: this is a pointrt to the parmeter s structure
+ * Return: if replaced return 1 otherwise 0.
  */
 int replace_alias(p_info_t *info)
 {
@@ -92,9 +92,9 @@ int replace_alias(p_info_t *info)
 	return (1);
 }
 /**
- * replace_vars - Replaces variables in the tokenized string.
- * @info: Pointer to the parameter struct.
- * Return: 1 if replaced else 0
+ * replace_vars - this is supposedto rrplace values in the tiokenised strng
+ * @info:  this theb parameters struct
+ * Return: if replaced 1 else 0
  */
 int replace_vars(p_info_t *info)
 {
@@ -130,10 +130,10 @@ int replace_vars(p_info_t *info)
 	return (0);
 }
 /**
- * replace_string - Replaces a string.
- * @old: Address of the old string.
- * @new: New string.
- * Return: 1 if replaced, 0 otherwise.
+ * replace_string - this is supposed to replcace  a string
+ * @new: this is the new str
+ * @old:  this is the Address of the old str
+ * Return: if replaced return 1 else 0
  */
 int replace_string(char **old, char *new)
 {
