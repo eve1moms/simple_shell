@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * list_len - this function  Calculates the len ofTHE linked list.
+ * list_len - this function  Calculates the length ofTHE linked list.
  * @h: this is the pointer 2 the 1st node of linked list.
  * Return: returns Size of linked list.
  */
@@ -100,7 +100,7 @@ list_t *node_starts_with(list_t *node, char *prefix, char c)
 /**
  * get_node_index - this function Gets the INDEX of a node i linked list
  * @node: this is the ptr whise INDEX is to be found
- * @head: tis is a pointer to the head of the linked list.
+ * @head: this is a pointer to the head of the linked list.
  * Return: Returns index of the node else -1
  */
 ssize_t get_node_index(list_t *head, list_t *node)

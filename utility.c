@@ -9,10 +9,10 @@ int _interactive(p_info_t *info)
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }
 /**
- * is_delim - this function checks if the charpresent is a seperatore
+ * is_delim - this function checks if the charpresent is a seperator
  * @delim: this is the str delimeer
- * @c: This is the caharacter to check.
- * Return: if THEchar is SEPERRATPR
+ * @c: This is the character to check.
+ * Return: if THEchar is SEPERRATOR
  */
 int is_delim(char c, char *delim)
 {

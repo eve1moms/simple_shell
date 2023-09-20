@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
- * is_chain - This checks if  achratcter ina buf is a chain delimeter
- * @buf: thhi sis the character buf
+ * is_chain - This checks if  acharatcter ina buf is a chain delimeter
+ * @buf: thhi is the character buf
  * @info: this is the parameter
  * @p: this is the adress to the current buff positiion
  * Return: if is a cin delimeter return 1 else 0
@@ -35,7 +35,7 @@ int is_chain(p_info_t *info, char *buf, size_t *p)
 /**
  * check_chain - this checks if the chaining shouls continue
  * based on the last ststus
- * @p: this shows he address of thh current position in buf
+ * @p: this shows the address of thh current position in buf
  * @len: this is the legth of the buf
  * @info: this is the pointer to the parameter struct
  * @buf: The character buffer.
@@ -65,7 +65,7 @@ void check_chain(p_info_t *info, char *buf, size_t *p, size_t i, size_t len)
 	*p = j;
 }
 /**
- * replace_alias - Thisis upposed to replace an alis to the supported string
+ * replace_alias - Thisis supposed to replace an alias to the supported string
  * @info: this is a pointrt to the parmeter s structure
  * Return: if replaced return 1 otherwise 0.
  */
@@ -92,8 +92,8 @@ int replace_alias(p_info_t *info)
 	return (1);
 }
 /**
- * replace_vars - this is supposedto rrplace values in the tiokenised strng
- * @info:  this theb parameters struct
+ * replace_vars - this is supposedto replace values in the tokenised strng
+ * @info:  this the  parameters struct
  * Return: if replaced 1 else 0
  */
 int replace_vars(p_info_t *info)

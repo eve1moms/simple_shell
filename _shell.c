@@ -3,8 +3,7 @@
  * _shell - this function is the  main shell loop
  * @av: this is the argument vecor
  * @info: this pointer to the parametr and retuen info struct
- * @av:
- * Ths funcion is reponsible for runnin he maon loop of shell
+ * Ths funcion is reponsible for runnig the main loop of shell
  * Return: on success 0 on error 1 or and rror message
  */
 int _shell(p_info_t *info, char **av)
@@ -47,7 +46,7 @@ int _shell(p_info_t *info, char **av)
  * @info:This is a pointer 2 parameter
  * Return: if builtin functtion not found retur -1
  * if thr built in excuted sucessfully 0,if not found but succesfully 1
- * if built insignala (exit) 2.
+ * if built in signals exit) 2.
  */
 int find_builtin(p_info_t *info)
 {

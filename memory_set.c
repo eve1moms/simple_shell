@@ -33,7 +33,7 @@ void ffree(char **pp)
  * _realloc - this function reallocates block OF MEMEORY
  * @old_size: this is the previous size IN BYTES of BLOCK
  * @ptr: This is the pointer 2 previous mallocaed BLOCK
- * @new_size: This is NEW SIZE in byes of block
+ * @new_size: This is NEW SIZE in bytes of block
  * Return: void
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)

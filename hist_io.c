@@ -96,9 +96,9 @@ int read_history(p_info_t *info)
 }
 /**
  * build_history_list - Function adds an entry to the hit linked list
- * @buf: this is the uf containing the hitory entry
- * @info: is hes struc containingpotential args
- * @linecount: his is the histiry line count
+ * @buf: this is the buf containing the hitory entry
+ * @info: the struct containingpotential args
+ * @linecount: this is the histiry line count
  * Return: 0.
  */
 int build_history_list(p_info_t *info, char *buf, int linecount)

@@ -2,9 +2,9 @@
 /**
  * _strncpy - This is supposed to copy a string
  * @n: the no of character to be copied.
- * @src: this isthe sourxe str
+ * @src: this isthe source str
  * @dest: this is the destination string to be copied to
- * Return: A POinter to de destinaoon string
+ * Return: A POinter to the destinatin string
  */
 char *_strncpy(char *dest, char *src, int n)
 {
@@ -29,11 +29,11 @@ char *_strncpy(char *dest, char *src, int n)
 	return (s);
 }
 /**
- * _strncat - this concatenates(combines) two strings
- * @src: this is the 2nd part of the string
- * @dest:  this is the scecond string
- * @n: this sis the ma no f ytes to use
- * Return: should retuen a pointer to the concatenateds tring
+ * _strncat - this combines two strings
+ * @src: this is the 1st part of the string
+ * @dest:  this is the 2nd string
+ * @n: this is the bytes to use
+ * Return: should return a poiter to the combined strings
  */
 char *_strncat(char *dest, char *src, int n)
 {

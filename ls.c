@@ -32,7 +32,7 @@ list_t *add_node(list_t **head, const char *str, int num)
 }
 /**
  * add_node_end - This function adds a new nodeto end of LIS
- * @str: this is the sr data that is stored in new node
+ * @str: this is the str data that is stored in new node
  * @head: this is the address of Pointer to the head node
  * @num:  This is the node INDEX TO  use
  * Return:  should return the size of the list updated

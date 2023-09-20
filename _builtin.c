@@ -1,10 +1,9 @@
 #include "shell.h"
 /**
- * my_history - shows history list Showing 1 cmd per line,
+ * my_history - shows history list, Showing 1 cmd per line,
  * proceding with line numbers starting at 0.
- * @info: This is the Struct that has potential arguments Used to
- * maintain
- * THE C onstantFunct prototype.
+ * @info: This is the Struct that has potential arguments that
+ * maintains THE C onstantFunct prototype.
  * Return: 0
  */
 int my_history(p_info_t *info)
@@ -13,7 +12,7 @@ int my_history(p_info_t *info)
 	return (0);
 }
 /**
- * unset_alias - inside the string it delete an alias associated with it
+ * unset_alias - inside the string, it delete an alias associated with it
  * @str: STR to del
  * @info: Parameter STRUCT
  * Return: 0 on succes ELSE 1 on error.
@@ -74,7 +73,7 @@ int print_alias(list_t *node)
 	return (1);
 }
 /**
- * my_alias - this fubct mimics the alis builtin,(man alias)
+ * my_alias - this funct mimics the alias builtin,(man alias)
  * @info: This contains potential arg
  * and it maintain a constant prototype
  * Return: 0.

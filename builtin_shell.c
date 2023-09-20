@@ -3,7 +3,7 @@
  * _myexit - This function exitsts the shell
  * @info: has structure that contanin potentian arg
  * maintains constant prototyoe
- * Return: it exists Status With a 0,if info->argv[0]  NOT "exit".
+ * Return: it exists STatus With a 0,if info->argv[0]  NOT "exit".
  */
 int _myexit(p_info_t *info)
 {
@@ -27,9 +27,9 @@ int _myexit(p_info_t *info)
 	return (-2);
 }
 /**
- * change_directory - This fubction  haged directory
- * @info: has structure that contains [otentian ards
- * maintains constant prototypr
+ * change_directory - This fubction  changes directory
+ * @info: has structure that contains potential args
+ * maintains constant prototype
  * Return: 0
  */
 int change_directory(p_info_t *info)
@@ -77,9 +77,9 @@ int change_directory(p_info_t *info)
 }
 /**
  * my_help - tgis displaya my help
- * @info: THis contains potentiaal args
- * maintians a contavt prototype
- * Return: 0.
+ * @info: THis contains potential args
+ * maintians a constant prototype
+ * Return: 0
  */
 int my_help(p_info_t *info)
 {

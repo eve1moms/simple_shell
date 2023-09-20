@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
- * _strcpy - this copied a sring tio destination string
- * @src: thi sis the source string
+ * _strcpy - this copied a src str to destination string
+ * @src: this is the source string
  * @dest: this is the destination string
  * Return:a pointer to the s dest string
  */
@@ -57,9 +57,9 @@ void _puts(char *str)
 	}
 }
 /**
- * _putchar - This writes a CHr c to STDOut
- * @c: Tis is the character to print out
- * Return: 1 on sucess and -  when fail and errno isset approprietly
+ * _putchar - This writes a Char c to STDOut
+ * @c: This is the character to print out
+ * Return: 1 on sucess  0  when fail and errno isset approprietly
  */
 int _putchar(char c)
 {

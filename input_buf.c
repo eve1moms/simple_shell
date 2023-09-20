@@ -1,9 +1,9 @@
 #include "shell.h"
 /**
  * input_buf -this functioon reads INPUT and BUF chained commads
- * @buf: this si the adress of the buf
+ * @buf: this is the adress of the buf
  * @info: this is the  Parameter 2 strct containing  the shell info
- * @len: this is the adress to the lenghth var
+ * @len: this is the adress to the length var
  * Return: the no of bytes READ
  */
 ssize_t input_buf(p_info_t *info, char **buf, size_t *len)
@@ -86,7 +86,7 @@ ssize_t get_input(p_info_t *info)
 }
 /**
  * read_buf - this function Reads buf from A fd
- * @buf: this is the buf tostoore the read data.
+ * @buf: this is the buf to store the read data.
  * @info: this is the Parameter Strct having shell info
  * @i:  this is the size of the buf
  * Return: the no if BYtes it has read
@@ -104,7 +104,7 @@ ssize_t read_buf(p_info_t *info, char *buf, size_t *i)
 }
 /**
  * _getline - Thisfunction Gets  next line INPUT from STDIN.
- * @ptr: this is the adress of the pointr t the buf, prelocated or null
+ * @ptr: this is the adress of the pointer to the buf, prelocated or null
  * @info: this is the Parameter strct having the shell info
  * @length: this is the size of PREallocated ptr buf if not NULL.
  * Return: REturns no of BYtes read

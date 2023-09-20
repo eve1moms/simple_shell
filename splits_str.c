@@ -47,8 +47,8 @@ char **_strtop(char *str, char *d)
 	return (s);
 }
 /**
- * **_strtop2 - this sfuncion splis a sring intoword
- * @d: his is he delimeer char tha is used o split the inputed str
+ * **_strtop2 - this funcion splits a string intoword
+ * @d: this is the delimeer char tha is used o split the inputed str
  * @str: This is the input string to be split
  * Return: on  sucess, should return pointer to array of str
  * else  null

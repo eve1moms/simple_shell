@@ -44,7 +44,7 @@ void set_p_info(p_info_t *info, char **av)
 }
 /**
  * free_p_info - This function Frees fields of the p_info_t struct
- * @all: free all the fielsd if it is true else oly the specific ones are freed
+ * @all: free all the field if it is true else only the specific ones are freed
  * @info: this is the pointer 2 p_info_t
  */
 void free_p_info(p_info_t *info, int all)

@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * my_env - this fuction prints the currentenviroment
+ * my_env - this function prints the current enviroment
  * @info: This struct that has potential arg
  * Return: 0
  */
