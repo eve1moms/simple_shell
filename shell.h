@@ -52,7 +52,7 @@ typedef struct linked_list
 } list_t;
 
 /**
- * struct p_info - This function that contains PSEUDO-arguements 2 pass into a funct
+ * struct p_info - This function contains PSEUDO-arguements 2 pass into a funct
  *  thus allowing UNIFORM prototype for funct ptr struct
  * @argc: this is the argument count
  * @path: this is a string path for the cmd
